@@ -81,3 +81,26 @@ function matching(){
         return false;
     }
 }
+function nmber(){
+    var n=document.getElementById('form2Example5');
+    let numbRegex=/^([0-9 -.]{3}+)([0-9] -.{3}+)([0-9] -.{4})$/
+    if(numbRegex.test(n.value)){
+        error5.innerText='Number is valid';
+        error5.style.color='green';
+        return true;
+    }
+    else{
+        error5.innerText='Number is invalid';
+        error5.style.color='red';
+        return false; 
+    }
+    
+}
+function verify(){
+    if(n=="" || m=="" || z=="" || uName=="" || y=="" || x==""){
+        alert('Input fields cannot be empty');
+    }
+    else{
+        return 0;
+    }
+}
