@@ -49,7 +49,7 @@
           
                           <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
           
-                          <form onsubmit="return userName(), email(),pwd(),pwd1(),matching()" action="submit">
+                          <form onsubmit="return userName(), email(),pwd(),pwd1(),matching(), nmber()" action="submit">
 
                               <div class="form-outline mb-4">
                                 <input placeholder="Name" type="text" id="form3Example1c" class="form-control" />
@@ -60,12 +60,19 @@
                               <input type="email" placeholder="Email" id="form2Example1" class="form-control" />
                               <span id="error1"></span>
                             </div>
+
+                            <div class="form-outline mb-4">
+                              <input type="" placeholder="Number" id="form2Example5" class="form-control" />
+                              <span id="error5"></span>
+                            </div>
                           
                             <!-- Password input -->
                             <div class="form-outline mb-4">
                               <input type="password" placeholder="Password" id="form2Example3" class="form-control" />
                               <span id="error2"></span>
                             </div>
+
+                           
           
                               <div class="form-outline mb-4">
                                 <input placeholder="Repeat your password" type="password" id="form2Example4" class="form-control" />
